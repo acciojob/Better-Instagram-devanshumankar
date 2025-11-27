@@ -12,7 +12,6 @@ document.addEventListener("drop",(e)=>{
 
 	if(target!=dragElement){
 			let temp=document.createElement("div");
-
 			target.replaceWith(temp);
 			dragElement.replaceWith(target);
 			temp.replaceWith(dragElement);
