@@ -10,7 +10,7 @@ document.addEventListener("drop",(e)=>{
 	e.preventDefault();
 	let target=e.target;
 
-	if(target!=dragElement){
+	if(target!=dragElement && target.parentElement.id=="parent"){
 			let temp=document.createElement("div");
 			target.replaceWith(temp);
 			dragElement.replaceWith(target);
